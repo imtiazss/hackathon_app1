@@ -14,7 +14,8 @@ const hero = () => {
       <p className="mb-5 text-myWhite1  scroll-m-20 text-xl scroll  font-semibold tracking-tight">
         Upgrade your Wardrobe with Sleek & Stylish Apparels and Top-Notch Shoes.</p>
         <Button className=' outline outline-off outline-1 text-myWhite1 group hover:rounded-2xl duration-300 hover:outline-myOrange shadow-md shadow-myOrange'>
-      <FaShoppingBag className="mr-2 h-6 w-6 group-hover:text-myOrange group-hover:animate-bounce " /> Shop Now
+      <FaShoppingBag className="mr-2 h-6 w-6 group-hover:text-myOrange group-hover:animate-bounce " /> 
+      Shop Now
     </Button>
     </div>
   </div>

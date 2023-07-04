@@ -24,23 +24,23 @@ const Navbar = () => {
           <li>
             <a>Parent</a>
             <ul className="p-2">
-            <li><Link href="">
+            <li><Link href="/tops">
                 <Image src ={tops} alt ="Tops" width= {32} height={16} />
                 Tops
                 </Link></li>
-              <li><Link href="">
+              <li><Link href="/pants">
               <Image src ={pants} alt ="Pants" width= {32} height={16} />
               Pants</Link></li>
-              <li><Link href="">
+              <li><Link href="/accessories">
               <Image src ={jewelry} alt ="Jwelry" width= {32} height={16} />
               Acces./Jewelry</Link></li>
-              <li><Link href="">
+              <li><Link href="/shoes">
               <Image src ={shoes} alt ="Shoes" width= {32} height={16} />
               Shoes</Link></li>
             </ul>
           </li>
-          <li><Link href="">About</Link></li>
-        <li><Link href="">Contact</Link></li>
+          <li><Link href="/aboutUs">About</Link></li>
+        <li><Link href="/contact">Contact</Link></li>
         </ul>
         </div>
         <Link href="/">

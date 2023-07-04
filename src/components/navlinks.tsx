@@ -25,25 +25,25 @@ import { StaticImageData } from "next/image"
 const components: { title: string; href: string; description: string ; image:StaticImageData}[] = [
   {
     title: "Tops",
-    href: "/",
+    href: "/tops",
     description: "A collection of beautiful tops for your wardrobe to sleek took.",
     image : tops1,  
   },
   {
-    title: "Paints",
-    href: "/",
+    title: "Pants",
+    href: "/pants",
     description: "A collection of beautiful Paints for your wardrobe to sleek took.",
     image : pants1,
   },
   {
     title: "Accessories/Jewelry",
-    href: "/",
+    href: "/accessories",
     description: "A collection of beautiful Jewelry for your wardrobe to sleek took.",
     image : jewelry,
   },
   {
     title: "Shoes",
-    href: "/",
+    href: "/shoes",
     description:
       "A collection of beautiful Shoes for your wardrobe to sleek took.",
       image : shoes1,
@@ -68,29 +68,32 @@ export function NavigationMenuDemo() {
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-myWhite1 ">
               {components.map((component) => (
-                <ListItem className="hover:text-myOrange duration-300"
                 
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}>
+                <Link key={component.title}  
+                href={component.href} >
+                <ListItem className="hover:text-myOrange duration-300" 
+                     title={component.title}>
+                                       
+
                     <div className="bg-myBlue h-1"></div>
                 <div className="flex flex-row justify-start ">
                   <Image className="mr-4 w-10 h-auto" src ={component.image} alt= {component.title} />
                   <div className="text-xs mt-2"> {component.description}</div>
                   </div>
                 </ListItem>
+                </Link>
                  
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="/aboutUs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               About
             </NavigationMenuLink>
           </Link>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contact
             </NavigationMenuLink>

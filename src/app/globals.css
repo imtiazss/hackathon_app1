@@ -5,3 +5,10 @@
 .custom-img{
     background-image : url('../../public/images/hero4.jpg');
 }
+.promo-1{
+    background-image: url('../../public/images/hero1stChild.jpg');
+}
+
+.promo-2{
+    background-image: url('../../public/images/hero2ndChild.jpg');
+}
